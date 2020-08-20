@@ -1,15 +1,13 @@
 ## Abstract
 Yeezus. Ye. The Louis Vuitton Don. Born in Atlanta and raised in Chicago, the musical icon of our generation known as Kanye Omari West has changed the world with his timeless music. From the uplifting beats featured in his debut album “The College Dropout”, to the unorthodox blend of synthetics and vocals of “Graduation”, to the christian hymns of “Jesus is King”, West continues to defy established musical patterns while also creating melodies that have rocked the 21st century. 
-
-![Albums](Paper_Presentation _Images/images/albums.png)
-
+![Albums](images/albums.png)
 This project focuses on this phenomena, namely deconstructing West’s melodies to discover some kind of underlying pattern in order to generate new & unheard of melodies that maintains Kanye’s style. In other words, does a computer have what it takes to generate a beat that could trick even the most devoted of Kanye West savants into thinking the beat is authentic?
 
 ## Introduction
 
 RNN and music generation go together like peanut butter and jelly. RNN’s (recurrent neural networks), as defined by wikipedia [1], is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. What makes RNN’s more powerful than some of its other machine learning colleagues is that RNN’s maintain a “state” that allows the model to retain information no matter how long a sequence is. Since piano music generation has been a common application of RNN’s [2] [3], I decided to supply my model with piano melodies of West’s music in the hope of generating new “kanye-like” melodies in the form of piano notes. 
 
-![Albums](Paper_Presentation _Images/images/rnn.png)
+![Albums](images/rnn.png)
 
 My results began with a thud...literally. For some reason, any serene melody was drowned out by loud piano banging as if someone used the palm of their hand to vehemently press down on a piano. I applied various deep learning tactics and changed parameters to reach a melody that was free from piano banging and rich in a clear and bliss melody. 
 
@@ -18,11 +16,11 @@ My results began with a thud...literally. For some reason, any serene melody was
 Processing Piano Music
 Using RNN for music generation has been a widely studied topic in the past few years. For simplicity purposes, I decided to refer to a blog that was able to explain how RNN’s generate piano sheet music in a matter that was clear and concise to me [4].  RNN for music generation isn’t too different from RNN for text completion or text generation. Instead of feeding one word at a time into the model, we feed one note at a time. Now, you are probably wondering... “Okay but like, how do you do it?” Good question. As mentioned before, we will be working with piano music. This works out pretty well because it is clear what notes are being played at certain times. How do we know which notes are being played at some time ti ? * cue MIDI files*. Midi files, also known as musical instrument digital interface, is essentially a sequence of notes over a time period. The image below is what a .midi file looks like.  
 
-![Albums](Paper_Presentation _Images/images/midi.png)
+![Albums](images/midi.png)
 
 You can think of this as the “technological” way of reading piano sheet music. The x axis (length of the song) acts as the time while the y axis (size 88 because there are 88 playable notes) lets us know which notes are being played. We can turn this into a matrix of size 88 x tn where tn is the length of the song. For example, the column t91 will tell us which of the 88 notes are being played at time step 91.  
 
-![Albums](Paper_Presentation _Images/images/matrix.png)
+![Albums](images/matrix.png)
 
 Once we have our tn columns, we feed each column ti , 1 ≤ i ≤ n,into our model one at a time. Note that the vector ti can have multiple 1’s throughout the vector. One could find a way to encode this vector, but for the sake of space, inputting an 88x1 vector will work as well. 
 
