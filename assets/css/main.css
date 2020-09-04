@@ -15,7 +15,7 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font: inherit;
 		vertical-align: baseline;
 	}
 
@@ -86,7 +86,7 @@
 		color: rgba(255, 255, 255, 0.65);
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 20pt;
-		font-weight: 200;
+		font-weight: lighter;
 		line-height: 1.65;
 	}
 
