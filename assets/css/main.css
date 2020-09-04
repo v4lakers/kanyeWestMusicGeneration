@@ -85,7 +85,8 @@
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.65);
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 17pt;
+		font-weight: lighter;
+		font-size: 17.5pt;
 		line-height: 1.65;
 	}
 
