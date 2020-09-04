@@ -2,7 +2,6 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
 
-
 /*
 	Visualize by TEMPLATED
 	templated.co @templatedco
@@ -85,8 +84,7 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.65);
-		font-family: 'open sans',arial,sans-serif;
-		font-weight: 100;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17.5pt;
 		line-height: 1.65;
 	}
