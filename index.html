@@ -61,27 +61,27 @@
 
 				<!-- Main -->
 				<h1>Overview</h1>
-				<p> From the uplifting beats featured in his debut album “The College Dropout”,
+				<p align="justify"> From the uplifting beats featured in his debut album “The College Dropout”,
 					to the unorthodox blend of synthetics and vocals of “Graduation”, to the christian hymns of “Jesus is King”,
 					Kanye West continues to defy established musical patterns while also creating melodies that have rocked the 21st century.
 					In this project, we will be using RNN’s (recurrent neural networks) to generate music that aims to mimic his style.
 					Results below. 👀 </p>
 				<br><br>
 				<h1>So Like...How Does This Work?</h1>
-				<p>RNN and music generation go together like peanut butter and jelly, like Jim and Pam, like Rings and 💛Kobe💜.
+				<p align="justify">RNN and music generation go together like peanut butter and jelly, like Jim and Pam, like Rings and 💛Kobe💜.
 					RNN's take in sequential data (say music for example) as input and tries to look for some kind of pattern.
 					If our model finds this underlying pattern of the sequential data, we can use the model to predict what
 					should come next given some arbitrary starting point. In the case of music generation, we want to predict the next sound.</p>
 				<img src="images/rnn.png" style="width:50%;" class="center">
 				<br><br>
 				<h1>Piano Music</h1>
-				<p> Spoiler Alert: we will be using piano covers of Kanye West's music for this project. Why? Short answer: it's easier.
+				<p align="justify"> Spoiler Alert: we will be using piano covers of Kanye West's music for this project. Why? Short answer: it's easier.
 					 When it comes to piano music, it is clear which notes are being played at any given time. How do we know which notes are
 					 being played at a given time? ~cue MIDI files~. Midi files, also known as musical instrument digital interface,
 					 is essentially a sequence of notes over a time period. The image below is what a .midi file looks like. </p>
 				<img src="images/midi.png" style="width:50%;" class="center">
 				<br>
-				<p>You can think of this as the “technological” way of reading piano sheet music. The x axis (length of the song)
+				<p align="justify">You can think of this as the “technological” way of reading piano sheet music. The x axis (length of the song)
 					acts as the time while the y axis (size 88 because there are 88 playable notes) lets us know which notes are being
 					played. We can turn this into a matrix of size 88 x tn where tn is the length of the song. For example,
 					the column t91 will tell us which of the 88 notes are being played at time step 91.
@@ -94,7 +94,7 @@
 				<img src="images/matrix.png" style="width:50%;" class="center">
 				<br><br>
 				<h1>Data</h1>
-				<p>
+				<p align="justify">
 					This is where the fun begins. As mentioned earlier, piano covers for various Kanye West songs
 					populate my dataset. Did I do these covers on my own? Nope. Instead, I converted piano covers
 					of Kanye's songs on youtube to midi files. (Links to all the youtubers who supplied the beautiful covers
@@ -104,7 +104,7 @@
 				<img src="images/process.png" style="width:75%;" class="center">
 				<br><br>
 				<h1>Code</h1>
-				<p>
+				<p align="justify">
 					This is where the fun really begins. Huge huge huge thank you to James Carpenter and Prince Grover who
 					developed an ingenious pipeline that allows for midi files to be used in the forward and backward
 					steps of deep learning. This project would not exist without their code (link to their work in the github
@@ -123,7 +123,7 @@
 				</p>
 				<br>
 				<h1>Results</h1>
-				<p>
+				<p align="justify">
 					Remember step 7 from above? It took several trial and errors to get anywhere near "epic". Instead of showing
 					all 200 something trials, the following 4 tracks show the progression of my quest towards making music like Kanye.
 					If you are a fan of scary movie soundtracks or a cacophony of sounds, you are in for a treat!
@@ -147,7 +147,7 @@
             		<source title="trial 200" src="Results/Trials/trial200.mp3" type="audio/mp3">
         		</audio>
 				<br><br><br>
-				<p>
+				<p align="justify">
 					Yikes. What makes this project so hard is that relying on the loss isn't the best indicator
 					if we are producing good music or not. After hours and hours of changing different model parameters,
 					namely different levels of dropout and RNN architecture, I finally arrived at a generated audio clip
@@ -161,7 +161,7 @@
         		</audio>
 				<br><br><br>
 				<h1>Turn Up!</h1>
-				<p>
+				<p align="justify">
 					Using the "Good Sounding Generated Clip" as the underlying beat, my brother was able to add a baseline
 					and a few other instruments to produce the following beats. Enjoy!
 				</p>
@@ -188,7 +188,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p>&copy; CHECKUntitled. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>.</a>.</p>
+						<p>&copy; ClUntitled. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>.</a>.</p>
 					</footer>
 
 			</div>
