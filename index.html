@@ -13,6 +13,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
+			audio{
+				width: 250px;
+				vertical-align: middle;
+
+			}
 			body {
         		font-family: 'Bebas Neue';
       			}
@@ -61,15 +66,23 @@
 
 				<!-- Main -->
 				<h1>Overview</h1>
+				<p>This project explains how I trained a model to go from this &nbsp <audio controls>
+            		<source src="Results/Trials/trial1.mp3" type="audio/wav">
+        		</audio> &nbsp into this &nbsp
+				<audio controls>
+            		<source src="Results/Beats_made_with_Best_Result/Knock_Off_Donkey_Kong/Knock_off_Donkey_Kong.wav" type="audio/wav">
+        		</audio>
+				</p>
+				<br>
+
 				<p align="justify"> From the uplifting beats featured in his debut album “The College Dropout”,
 					to the unorthodox blend of synthetics and vocals of “Graduation”, to the christian hymns of “Jesus is King”,
 					Kanye West continues to defy established musical patterns while also creating melodies that have rocked the 21st century.
 					In this project, we will be using RNN’s (recurrent neural networks) to generate music that aims to mimic his style.
-					Results below. 👀 </p>
+				</p>
 				<br><br>
 				<h1>So Like...How Does This Work?</h1>
-				<p align="justify">RNN and music generation go together like peanut butter and jelly, like Jim and Pam, like Rings and 💛Kobe💜.
-					RNN's take in sequential data (say music for example) as input and tries to look for some kind of pattern.
+				<p align="justify">RNN and music generation go together like peanut butter and jelly. RNN's take in sequential data (say music for example) as input and tries to look for some kind of pattern.
 					If our model finds this underlying pattern of the sequential data, we can use the model to predict what
 					should come next given some arbitrary starting point. In the case of music generation, we want to predict the next sound.</p>
 				<img src="images/rnn.png" style="width:50%;" class="center">
@@ -139,7 +152,7 @@
             		<source title="trial 50" src="Results/Trials/trial50.mp3" type="audio/mp3">
 
         		</audio>
-				<br>
+				<br><br>
 					<audio controls>
             		<source title="trial 100" src="Results/Trials/trial100.mp3" type="audio/mp3">
         		</audio>
@@ -170,7 +183,7 @@
 				<audio controls>
             		<source src="Results/Beats_made_with_Best_Result/Someone's_At_Your_Door/Someone's_at_your_door_lmao.wav" type="audio/wav">
         		</audio>
-				<br>
+				<br><br>
 				<img src="images/lmao.png" style="width:45%;">
 				<br>
 				<br>
@@ -181,7 +194,7 @@
 				<audio controls>
             		<source src="Results/Beats_made_with_Best_Result/Knock_Off_Donkey_Kong/Knock_off_Donkey_Kong.wav" type="audio/wav">
         		</audio>
-				<br>
+				<br><br>
 				<img src="images/dk.png" style="width:45%;">
 
 
