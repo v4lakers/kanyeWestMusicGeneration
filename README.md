@@ -2,7 +2,7 @@
 
 ### Running the Code
 Directions to run the code can be found in the file Kanye_Music_Generation.ipynb. Make sure your directory looks like
-this. Results can vary greatly due to the nature of the model parameters.
+this (all the files/folders shown can be found in the midi directory). Results can vary greatly due to the nature of the model parameters.
 
 ![Test Image 1](assets/images/direc.png)
 
