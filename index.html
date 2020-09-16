@@ -91,14 +91,14 @@
 				<p align="justify">RNN and music generation go together like peanut butter and jelly. RNN's take in sequential data (say music for example) as input and tries to look for some kind of pattern.
 					If our model finds this underlying pattern of the sequential data, we can use the model to predict what
 					should come next given some arbitrary starting point. In the case of music generation, we want to predict the next sound.</p>
-				<img src="assets/images/rnn.png" style="width:50%;" class="center">
+				<img src="assets/images/rnn.png" style="width:80%;" class="center">
 				<br><br>
 				<h1>Piano Music</h1>
 				<p align="justify"> Spoiler Alert: we will be using piano covers of Kanye West's music for this project. Why? Short answer: it's easier.
 					 When it comes to piano music, it is clear which notes are being played at any given time. How do we know which notes are
 					 being played at a given time? ~cue MIDI files~. Midi files, also known as musical instrument digital interface,
 					 is essentially a sequence of notes over a time period. The image below is what a .midi file looks like. </p>
-				<img src="assets/images/midi.png" style="width:50%;" class="center">
+				<img src="assets/images/midi.png" style="width:80%;" class="center">
 				<br>
 				<p align="justify">You can think of this as the “technological” way of reading piano sheet music. The x axis (length of the song)
 					acts as the time while the y axis (size 88 because there are 88 playable notes) lets us know which notes are being
@@ -110,7 +110,7 @@
 					this vector, but for the sake of space, inputting an 88x1 vector will work as well.
 				</p>
 
-				<img src="assets/images/matrix.png" style="width:50%;" class="center">
+				<img src="assets/images/matrix.png" style="width:80%;" class="center">
 				<br><br>
 				<h1>Data</h1>
 				<p align="justify">
@@ -120,7 +120,7 @@
 					can be found in the acknowledgements page). Once I had about 100 minutes of Kanye Piano Cover midi files,
 					I split the data into a train set (50%), test set (25%), and validation set (25%).
 				</p>
-				<img src="assets/images/process.png" style="width:75%;" class="center">
+				<img src="assets/images/process.png" style="width:80%;" class="center">
 				<br><br>
 				<h1>Code</h1>
 				<p align="justify">
@@ -148,7 +148,7 @@
 					If you are a fan of scary movie soundtracks or a cacophony of sounds, you are in for a treat!
 				</p>
 				<code>
-					Results During Training and Parameter Tuning
+					Results During Parameter Tuning
 				</code>
 				<br><br>
 					<audio controls>
@@ -173,7 +173,7 @@
 					that had a noticeable melody and was free of piano banging.
 				</p>
 
-				<code>Good Sounding Generated Clip</code>
+				<code>Good Sounding Result</code>
 				<br><br>
 				<audio controls>
             		<source src="Results/Best_Sounding_Result/og.wav" type="audio/wav">
@@ -190,7 +190,7 @@
             		<source src="Results/Beats_made_with_Best_Result/Someone's_At_Your_Door/Someone's_at_your_door_lmao.wav" type="audio/wav">
         		</audio>
 				<br><br>
-				<img src="assets/images/lmao.png" style="width:45%;">
+				<img src="assets/images/lmao.png" style="width:55%;">
 				<br>
 				<br>
 				<br>
@@ -201,13 +201,13 @@
             		<source src="Results/Beats_made_with_Best_Result/Knock_Off_Donkey_Kong/Knock_off_Donkey_Kong.wav" type="audio/wav">
         		</audio>
 				<br><br>
-				<img src="assets/images/dk.png" style="width:45%;">
+				<img src="assets/images/dk.png" style="width:55%;">
 
 
 
 				<!-- Footer -->
 					<footer id="footer">
-
+						<p><a href="https://templated.co/">Design: TEMPLATED</a></p>
 					</footer>
 
 			</div>
